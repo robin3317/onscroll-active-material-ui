@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 const Header = props => {
   return(
     <Fragment>
-      <AppBar position="static" color="primary">
+      <AppBar position="sticky" color="primary">
         <Toolbar>
           <Typography variant="h5" color="inherit">
             {props.title}
