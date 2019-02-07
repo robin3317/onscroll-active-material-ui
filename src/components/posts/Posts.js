@@ -1,6 +1,5 @@
 // Packages
 import React, { Component } from 'react';
-
 // Components
 import Post from './Post';
 import PostsList from '../posts-list/PostsList'
@@ -10,15 +9,26 @@ import posts from '../../db/posts.json';
 import './index.css';
 
 class Posts extends Component {
+
+  constructor(props) {
+    super(props)
+    this.myRef = React.createRef();
+  }
+
+  componentDidMount() {
+    console.log(this.myRef.current);
+  }
+
   render() {
     const postsCardList = posts.map(post => {
       return(
-        <Post
-          key={post.id}
-          title={post.title}
-          subTitle={post.postDetails}
-          img={post.image}
-        />
+        <div ref={this.myRef} key={post.id}>
+          <Post
+            title={post.title}
+            subTitle={post.postDetails}
+            img={post.image}
+          />
+        </div>
       );
     });
 
@@ -31,6 +41,7 @@ class Posts extends Component {
                 title={post.title}
                 avatar={post.image}
                 createdAt={post.createdAt}
+                selected={false}
               />
             )
           })}

@@ -15,31 +15,43 @@ import Button from '@material-ui/core/Button';
 import './index.css';
 
 class Post extends Component {
+  constructor(props) {
+    super(props);
+
+    this.postRef = React.createRef();
+  }
+
+  componentDidMount() {
+    console.log(this.postRef.current);
+  }
+
   render() {
     return(
-      <Card className="card">
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            alt={this.props.title}
-            height="140"
-            image={this.props.img}
-            title={this.props.title}
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              {this.props.title}
-            </Typography>
-            <Typography component="p">
-              {this.props.subTitle}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-            <Button size="small" color="primary">Share</Button>
-            <Button size="small" color="primary">Learn More</Button>
-        </CardActions>
-      </Card>
+      <div ref={this.postRef}>
+        <Card className="card">
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              alt={this.props.title}
+              height="140"
+              image={this.props.img}
+              title={this.props.title}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="h2">
+                {this.props.title}
+              </Typography>
+              <Typography component="p">
+                {this.props.subTitle}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+          <CardActions>
+              <Button size="small" color="primary">Share</Button>
+              <Button size="small" color="primary">Learn More</Button>
+          </CardActions>
+        </Card>
+      </div>
     );
   }
 }

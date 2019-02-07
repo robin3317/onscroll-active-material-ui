@@ -11,21 +11,20 @@ import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 
 class PostsList extends Component {
+
   render() {
+    const { title, avatar, createdAt } = this.props;
     return(
       <List>
-        <ListItem alignItems="flex-start" button>
+        <ListItem alignItems="flex-start" button selected={this.props.selected}>
           <ListItemAvatar>
-            <Avatar
-              alt={this.props.title}
-              src={this.props.avatar}
-            />
+            <Avatar alt={title} src={avatar} />
           </ListItemAvatar>
           <ListItemText
-            primary={this.props.title}
+            primary={title}
             secondary={
                 <Typography component="span" color="textPrimary">
-                  {this.props.createdAt}
+                  {createdAt}
                 </Typography>
             }
           />
