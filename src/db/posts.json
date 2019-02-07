@@ -70,13 +70,5 @@
     "createdBy": "Author 9",
     "createdAt": "2019-01-30",
     "image": "https://ichef.bbci.co.uk/news/320/cpsprodpb/8515/production/_105496043_angelaahrendtsnew.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Virgin Media tests 8Gbps broadband",
-    "postDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    "createdBy": "Author 10",
-    "createdAt": "2019-01-29",
-    "image": "https://ichef.bbci.co.uk/news/660/cpsprodpb/7B00/production/_105488413_virginmedia1.jpg"
   }
 ]

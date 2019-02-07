@@ -1,5 +1,5 @@
 // Packages
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 // Components
 import Post from './Post';
@@ -7,7 +7,7 @@ import PostsList from '../posts-list/PostsList'
 
 // Resources, Styles
 import posts from '../../db/posts.json';
-import './Post.css';
+import './index.css';
 
 class Posts extends Component {
   render() {
@@ -22,16 +22,19 @@ class Posts extends Component {
       );
     });
 
-    const postsList = posts.map(post => {
-      return(
-        <PostsList
-          key={post.id}
-          title={post.title}
-          avatar={post.image}
-          createdAt={post.createdAt}
-        />
-      )
-    });
+    const postsList =
+      <div className="posts-list">
+        { posts.map(post => {
+            return(
+              <PostsList
+                key={post.id}
+                title={post.title}
+                avatar={post.image}
+                createdAt={post.createdAt}
+              />
+            )
+          })}
+      </div>
 
     return(
       <div className="container">
