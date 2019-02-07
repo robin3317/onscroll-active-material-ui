@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 
 // Resources, Styles
-import './post.css';
+import './Post.css';
 
 class Post extends Component {
   render() {

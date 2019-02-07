@@ -1,0 +1,17 @@
+.card {
+  margin: 1rem 2rem;
+  float: left;
+}
+
+.container {
+  display: flex;
+}
+
+.card {
+  max-width: 60vw;
+}
+
+.list {
+  max-width: 40vw;
+  margin: 1rem 0;
+}

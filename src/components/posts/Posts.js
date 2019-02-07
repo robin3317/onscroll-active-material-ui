@@ -3,13 +3,15 @@ import React, { Component, Fragment } from 'react';
 
 // Components
 import Post from './Post';
+import PostsList from '../posts-list/PostsList'
 
 // Resources, Styles
 import posts from '../../db/posts.json';
+import './Post.css';
 
 class Posts extends Component {
   render() {
-    const postsList = posts.map(post => {
+    const postsCardList = posts.map(post => {
       return(
         <Post
           key={post.id}
@@ -20,7 +22,23 @@ class Posts extends Component {
       );
     });
 
-    return <Fragment>{postsList}</Fragment>
+    const postsList = posts.map(post => {
+      return(
+        <PostsList
+          key={post.id}
+          title={post.title}
+          avatar={post.image}
+          createdAt={post.createdAt}
+        />
+      )
+    });
+
+    return(
+      <div className="container">
+        <span className="card">{postsCardList}</span>
+        <span className="list">{postsList}</span>
+      </div>
+    );
   }
 }
 
