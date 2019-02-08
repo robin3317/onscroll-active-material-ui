@@ -22,7 +22,7 @@ class Post extends Component {
   }
 
   componentDidMount() {
-    console.log(this.postRef.current);
+    //console.log(this.postRef.current);
   }
 
   render() {

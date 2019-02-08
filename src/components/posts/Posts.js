@@ -1,5 +1,6 @@
 // Packages
 import React, { Component } from 'react';
+
 // Components
 import Post from './Post';
 import PostsList from '../posts-list/PostsList'
@@ -12,11 +13,28 @@ class Posts extends Component {
 
   constructor(props) {
     super(props)
+
+    this.state = {
+      slected: false
+    }
+
     this.myRef = React.createRef();
   }
 
   componentDidMount() {
-    console.log(this.myRef.current);
+    console.log(this.myRef);
+    this.myRef.current.addEventListener('load', this.selectList());
+  }
+
+  selectList = () => {
+    window.onscroll = () => {
+      //this.setState({ selected: true });
+      /*if(window.scrollTo(0, this.myRef.current.offsetTop)) {
+        console.log('top');
+      }*/
+      console.log(this.myRef.current);
+      console.log(this.myRef.current.getBoundingClientRect());
+    }
   }
 
   render() {
@@ -41,7 +59,7 @@ class Posts extends Component {
                 title={post.title}
                 avatar={post.image}
                 createdAt={post.createdAt}
-                selected={false}
+                selected={this.state.selected}
               />
             )
           })}
