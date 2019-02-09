@@ -1,5 +1,5 @@
 // Packages
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 // Material components
@@ -9,15 +9,13 @@ import Typography from '@material-ui/core/Typography';
 
 const Header = props => {
   return(
-    <Fragment>
-      <AppBar position="sticky" color="primary">
-        <Toolbar>
-          <Typography variant="h5" color="inherit">
-            {props.title}
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Fragment>
+    <AppBar position="sticky" color="primary">
+      <Toolbar>
+        <Typography variant="h5" color="inherit">
+          {props.title}
+        </Typography>
+      </Toolbar>
+    </AppBar>
   );
 }
 

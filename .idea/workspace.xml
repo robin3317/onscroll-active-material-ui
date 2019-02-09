@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="e5cb9ac6-6ff7-4e29-964b-4a17b1895310" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/nav/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts-list/PostsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts-list/PostsList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/posts/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Post.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/posts/Posts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/Posts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/posts/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/posts/index.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+            <state relative-caret-position="272">
+              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
               <folding>
                 <element signature="e#79#113#0" expanded="true" />
               </folding>
@@ -29,26 +32,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/posts/Posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
-                <element signature="e#68#94#0" expanded="true" />
-                <element signature="e#165#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/posts/Post.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="557">
-              <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-              <folding>
-                <element signature="e#12#53#0" expanded="true" />
+                <element signature="e#69#95#0" expanded="true" />
+                <element signature="e#166#206#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,12 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/posts-list/PostsList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              <folding>
-                <element signature="e#12#53#0" expanded="true" />
-                <element signature="e#114#156#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -86,19 +73,19 @@
         <option value="$PROJECT_DIR$/src/components/App.css" />
         <option value="$PROJECT_DIR$/src/components/posts-list/PostsList.css" />
         <option value="$PROJECT_DIR$/src/components/posts/Post.css" />
+        <option value="$PROJECT_DIR$/src/db/posts.json" />
+        <option value="$PROJECT_DIR$/src/components/posts/Post.js" />
+        <option value="$PROJECT_DIR$/src/components/App.js" />
         <option value="$PROJECT_DIR$/src/components/nav/Header.js" />
         <option value="$PROJECT_DIR$/src/components/posts/index.css" />
-        <option value="$PROJECT_DIR$/src/db/posts.json" />
-        <option value="$PROJECT_DIR$/src/components/App.js" />
-        <option value="$PROJECT_DIR$/src/components/posts-list/PostsList.js" />
-        <option value="$PROJECT_DIR$/src/components/posts/Post.js" />
         <option value="$PROJECT_DIR$/src/components/posts/Posts.js" />
+        <option value="$PROJECT_DIR$/src/components/posts-list/PostsList.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="334" />
-    <option name="width" value="1024" />
+    <option name="x" value="52" />
+    <option name="width" value="1318" />
     <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -107,7 +94,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,48 +101,11 @@
               <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="nav" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="posts-list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onscroll-active-material-ui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onscroll-active-material-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,19 +150,20 @@
       <workItem from="1549482359427" duration="1928000" />
       <workItem from="1549484463321" duration="18255000" />
       <workItem from="1549560459698" duration="16091000" />
-      <workItem from="1549631190839" duration="3372000" />
+      <workItem from="1549631190839" duration="7439000" />
+      <workItem from="1549654996762" duration="15945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39646000" />
+    <option name="totallyTimeSpent" value="59658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="334" y="0" width="1024" height="775" extended-state="0" />
+    <frame x="52" y="0" width="1318" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20993915" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49844238" visible="true" weight="0.1875" />
+      <window_info id="Structure" order="1" sideWeight="0.50155765" side_tool="true" weight="0.1875" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -276,33 +226,8 @@
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/posts-list/PostsList.css" />
     <entry file="file://$PROJECT_DIR$/src/components/App.css" />
-    <entry file="file://$PROJECT_DIR$/src/components/nav/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-          <folding>
-            <element signature="e#12#52#0" expanded="true" />
-            <element signature="e#113#159#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/posts/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/posts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -317,20 +242,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
+        <state relative-caret-position="51">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/nav/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#79#113#0" expanded="true" />
+            <element signature="e#12#52#0" expanded="true" />
+            <element signature="e#113#159#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/posts-list/PostsList.js">
+    <entry file="file://$PROJECT_DIR$/src/components/posts/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/posts/Post.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#12#53#0" expanded="true" />
             <element signature="e#114#156#0" expanded="true" />
@@ -338,23 +278,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/posts/Posts.js">
+    <entry file="file://$PROJECT_DIR$/src/components/posts-list/PostsList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="76" column="21" lean-forward="true" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+        <state relative-caret-position="115">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
           <folding>
-            <element signature="e#68#94#0" expanded="true" />
-            <element signature="e#165#205#0" expanded="true" />
+            <element signature="e#79#113#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/posts/Post.js">
+    <entry file="file://$PROJECT_DIR$/src/components/posts/Posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="557">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#12#53#0" expanded="true" />
+            <element signature="e#69#95#0" expanded="true" />
+            <element signature="e#166#206#0" expanded="true" />
           </folding>
         </state>
       </provider>

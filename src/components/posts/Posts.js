@@ -10,37 +10,45 @@ import posts from '../../db/posts.json';
 import './index.css';
 
 class Posts extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.state = {
-      slected: false
-    }
-
-    this.myRef = React.createRef();
+    this.postRef = React.createRef();
+    this.listRef = React.createRef();
   }
 
   componentDidMount() {
-    console.log(this.myRef);
-    this.myRef.current.addEventListener('load', this.selectList());
+    // Initially first element of list will be highlighted
+    this.listRef.current.childNodes[0].childNodes[0].style.borderLeft = '.1rem solid red';
+    this.listRef.current.childNodes[0].childNodes[0].style.backgroundColor = 'rgba(255, 0, 0, .1)';
+    this.postRef.current.addEventListener('load', this.selectList())
   }
 
   selectList = () => {
-    window.onscroll = () => {
-      //this.setState({ selected: true });
-      /*if(window.scrollTo(0, this.myRef.current.offsetTop)) {
-        console.log('top');
-      }*/
-      console.log(this.myRef.current);
-      console.log(this.myRef.current.getBoundingClientRect());
+    // onscroll fires every time when scrolling
+    onscroll = () => {
+
+      let position;
+
+      for(let i = 0; i < this.postRef.current.childNodes.length; i++) {
+        position = this.postRef.current.childNodes[i].childNodes[0].childNodes[0].getBoundingClientRect().y;
+
+        // According to card position, highlight the list
+        if(position <= 246 && position > -104) {
+          this.listRef.current.childNodes[0].childNodes[i].style.borderLeft = '.1rem solid red';
+          this.listRef.current.childNodes[0].childNodes[i].style.backgroundColor = 'rgba(255, 0, 0, .1)';
+        }else {
+          this.listRef.current.childNodes[0].childNodes[i].style.borderLeft = '';
+          this.listRef.current.childNodes[0].childNodes[i].style.backgroundColor = '';
+        }
+      }
     }
   }
 
   render() {
     const postsCardList = posts.map(post => {
       return(
-        <div ref={this.myRef} key={post.id}>
+        <div key={post.id}>
           <Post
             title={post.title}
             subTitle={post.postDetails}
@@ -59,7 +67,6 @@ class Posts extends Component {
                 title={post.title}
                 avatar={post.image}
                 createdAt={post.createdAt}
-                selected={this.state.selected}
               />
             )
           })}
@@ -67,8 +74,8 @@ class Posts extends Component {
 
     return(
       <div className="container">
-        <span className="card">{postsCardList}</span>
-        <span className="list">{postsList}</span>
+        <span className="card" ref={this.postRef}>{postsCardList}</span>
+        <span className="list" ref={this.listRef}>{postsList}</span>
       </div>
     );
   }

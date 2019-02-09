@@ -15,16 +15,6 @@ import Button from '@material-ui/core/Button';
 import './index.css';
 
 class Post extends Component {
-  constructor(props) {
-    super(props);
-
-    this.postRef = React.createRef();
-  }
-
-  componentDidMount() {
-    //console.log(this.postRef.current);
-  }
-
   render() {
     return(
       <div ref={this.postRef}>

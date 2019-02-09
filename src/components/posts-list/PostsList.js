@@ -16,7 +16,7 @@ class PostsList extends Component {
     const { title, avatar, createdAt } = this.props;
     return(
       <List>
-        <ListItem alignItems="flex-start" button selected={this.props.selected}>
+        <ListItem alignItems="flex-start" button>
           <ListItemAvatar>
             <Avatar alt={title} src={avatar} />
           </ListItemAvatar>
